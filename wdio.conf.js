@@ -1,4 +1,4 @@
-exports.config = {
+export const config = {
     //
     // ====================
     // Runner Configuration
@@ -11,7 +11,7 @@ exports.config = {
     // Specify Test Files
     // ==================
     // Define which test specs should run. The pattern is relative to the directory
-    // from which `wdio` was called.
+    // of the configuration file being run.
     //
     // The specs are defined as an array of spec files (optionally using wildcards
     // that will be expanded). The test for each spec file will be run in a separate
@@ -63,6 +63,7 @@ exports.config = {
         'goog:chromeOptions': {
             args: ['--no-sandbox', '--window-size=1920,1080','--disable-dev-shm-usage']
         }
+        
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
